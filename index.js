@@ -25,7 +25,7 @@ const cors = require("cors");
   app.use("/entries",entriesRoutes);
   
   
-  app.listen(process.env.PORT||PORT,()=>{console.log(`server is running at post:${PORT}`)});
+  app.listen(process.env.PORT||5000,()=>{console.log(`server is running at post:${PORT}`)});
   }
   catch(err){
     console.log("Error starting Server",err)
